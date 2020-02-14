@@ -1,0 +1,6 @@
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.pdb

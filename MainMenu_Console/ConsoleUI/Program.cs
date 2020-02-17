@@ -23,7 +23,7 @@ namespace ConsoleUI
              */
 
             // Boolean for application access
-            bool exit = true;
+            bool exit = false;
 
             // Do-while loop for application
             do
@@ -72,7 +72,7 @@ namespace ConsoleUI
                         case 3:
                             // Changes exit value to false, exiting the program
                             Console.WriteLine("Bye bye!");
-                            exit = false;
+                            exit = true;
                             break;
                         default:
                             // Message if input is not a menu option

@@ -86,7 +86,7 @@ namespace ConsoleUI
                     Console.WriteLine($"'{choice}' is not a valid choice. Please try again.");
                 }
 
-            } while (exit == true);            
+            } while (exit == false);            
         }
     }
 }

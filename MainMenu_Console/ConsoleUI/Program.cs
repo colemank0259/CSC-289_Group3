@@ -56,6 +56,9 @@ namespace ConsoleUI
                              * to create an account.
                              */
                             Console.WriteLine("Please enter login information...");
+                            //create user and test created method
+                            User test = new User("admin", "admin");
+                            test.getUserTable();
                             break;
                         case 2:
                             // Allow user to input message using provided interface.

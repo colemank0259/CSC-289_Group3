@@ -5,5 +5,5 @@ Group 3 Development
 
 Marc Bauman
 Kevin Coleman
-Edmund Gonzalez
+Edmund Gonzales
 Christian New

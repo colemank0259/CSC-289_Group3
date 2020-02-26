@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+
 
 namespace ConsoleUI
 {
@@ -55,10 +57,22 @@ namespace ConsoleUI
                              * This form will also allow a new user
                              * to create an account.
                              */
-                            Console.WriteLine("Please enter login information...");
-                            //create user and test created method
-                            User test = new User("admin", "admin");
-                            test.getUserTable();
+
+                             //get username and password
+                            Console.WriteLine("Please enter your username");
+                            String username = Console.ReadLine();
+                            Console.WriteLine("Please enter your password");
+                            String password = Console.ReadLine();
+
+                            //create Data access object and create table for user data
+                            DAO test = new DAO();
+                            DataTable userTable = test.getUserTable();
+
+                            //create user object
+                            User user = new User(username, password, userTable);
+                            //validate user login
+                            bool valid = user.ValidateUser();
+                            if (valid) { Console.WriteLine("You Logged in!"); }
                             break;
                         case 2:
                             // Allow user to input message using provided interface.

@@ -4,37 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.SQLite;
-
 
 namespace ConsoleUI
 {
-    public class User
+    class User
     {
         //Properties
+
+        DataTable UserTable = new DataTable();
+        bool valid = false;
+
         public String Name
         {
-            get { return Name;}
-            set {Name = value;}
+            get { return Name; }
+            set { Name = value; }
         }
         public String Password
         {
             get { return Password; }
             set { Password = value; }
         }
-
-        //Database connection
-        public SQLiteConnection sqlite;
-
+       
         //Constructors
-        public User(String name, String password)
+        public User(String name, String password, DataTable dt)
         {
             String Name = name;
             String Password = password;
-            //get current directory and connect to DB file
-            string directory = Environment.CurrentDirectory;
-            sqlite = new SQLiteConnection("Data Source="+ directory +"/proto.sqlite");
-
+            DataTable UserTable = dt;
         }
 
         public User()
@@ -43,23 +39,28 @@ namespace ConsoleUI
             String Password = "";
         }
 
-        public void getUserTable()
+        //User Methods
+
+            //doesn't work, but also doesn't throw an error
+        public bool ValidateUser()
         {
-            //necessary stuff? need to experiment further...
-            SQLiteDataAdapter ad;
-            DataTable dt = new DataTable();
-
-            sqlite.Open(); //Initiate connection to the db
+            //put the data from the table into an array cuz I don't know how to work with a table
+            Array temptable = UserTable.Select();
             
-            SQLiteCommand cmd;
-            cmd = sqlite.CreateCommand();
-            cmd.CommandText = "SELECT * FROM User"; //set the query //BUGGED
-            ad = new SQLiteDataAdapter(cmd);
-            ad.Fill(dt); //fill the datasource
-            
-            sqlite.Close();
-            
+            foreach (Object i in temptable)
+            {                
+                if (i == Name)
+                {
+                    for (int j =0;j<temptable.Length;j++)
+                    {
+                        if (temptable.GetValue(j) == Password)
+                        {
+                            valid = true;
+                        }
+                    }
+                }
+            }
+            return valid;
         }
-
     }
 }

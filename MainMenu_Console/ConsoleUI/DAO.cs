@@ -27,7 +27,7 @@ namespace ConsoleUI
 
         }
 
-        
+        //bugged, returns an empty datatable
         public DataTable getUserTable()
         {
             //necessary stuff? need to experiment further...
@@ -38,7 +38,7 @@ namespace ConsoleUI
             
             SQLiteCommand cmd;
             cmd = sqlite.CreateCommand();
-            cmd.CommandText = "SELECT * FROM User"; //set the query //BUGGED
+            cmd.CommandText = "SELECT * FROM User"; //set the query 
             ad = new SQLiteDataAdapter(cmd);
             ad.Fill(dt); //fill the datasource
             

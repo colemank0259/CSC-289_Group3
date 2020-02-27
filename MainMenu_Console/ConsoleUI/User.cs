@@ -41,25 +41,35 @@ namespace ConsoleUI
 
         //User Methods
 
-            //doesn't work, but also doesn't throw an error
+            //can't be tested because the DAO is buggy
         public bool ValidateUser()
         {
-            //put the data from the table into an array cuz I don't know how to work with a table
+            /*
+            //confirming there are no rows of data in the table and that arrays below were not the problem
+            foreach (DataRow row in UserTable.Rows) { Console.WriteLine("row"); }
+            */
+
+            //put the data from the table into an array for reasons
             Array temptable = UserTable.Select();
-            
+
+            //array is empty... WHY?!
+            Console.WriteLine(temptable.Length);
+            /*
             foreach (Object i in temptable)
             {                
-                if (i == Name)
+                if (i.ToString() == Name)
                 {
                     for (int j =0;j<temptable.Length;j++)
                     {
-                        if (temptable.GetValue(j) == Password)
+                        if (temptable.GetValue(j).ToString() == Password)
                         {
                             valid = true;
                         }
                     }
                 }
-            }
+               
+
+        } */
             return valid;
         }
     }

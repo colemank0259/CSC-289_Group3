@@ -72,7 +72,7 @@ namespace ConsoleUI
                             User user = new User(username, password, userTable);
                             //validate user login
                             bool valid = user.ValidateUser();
-                            if (valid) { Console.WriteLine("You Logged in!"); }
+                            if (valid == true) { Console.WriteLine("You Logged in!"); }
                             break;
                         case 2:
                             // Allow user to input message using provided interface.

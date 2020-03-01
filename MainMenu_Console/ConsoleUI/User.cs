@@ -11,8 +11,12 @@ namespace ConsoleUI
     {
         //Properties
 
-        DataTable UserTable = new DataTable();
-        bool valid = false;
+        
+        public bool Valid = false;
+        /*{
+            get;
+            set;
+        }*/
 
         public String Name
         {
@@ -26,35 +30,48 @@ namespace ConsoleUI
         }
        
         //Constructors
-        public User(String name, String password, DataTable dt)
+        //bugged, passes data in wrong
+        public User(String name, String password)
         {
-            String Name = name;
-            String Password = password;
-            DataTable UserTable = dt;
+             String Name = name;
+             String Password = password;
+             //DataTable UserTable = dt.Copy();
+             bool Valid = false;
         }
 
         public User()
         {
-            String Name = "";
-            String Password = "";
+             String Name = "";
+             String Password = "";
+             bool Valid = false;
         }
 
         //User Methods
 
-            //can't be tested because the DAO is buggy
-        public bool ValidateUser()
+            
+        public void ValidateUser()
         {
-            /*
-            //confirming there are no rows of data in the table and that arrays below were not the problem
-            foreach (DataRow row in UserTable.Rows) { Console.WriteLine("row"); }
-            */
+            DAO test = new DAO();
+            DataTable UserTable = test.getUserTable();
+
+            //Console.WriteLine(UserTable.Columns);
+
+            ///*
+            //confirm there are rows of data in the table,       SUCCESS
+            foreach (DataRow row in UserTable.Rows)
+            {
+                Console.WriteLine(row);
+
+
+            }
+            //*/
 
             //put the data from the table into an array for reasons
             Array temptable = UserTable.Select();
 
             //array is empty... WHY?!
-            Console.WriteLine(temptable.Length);
-            /*
+            //Console.WriteLine(temptable.Length);
+            
             foreach (Object i in temptable)
             {                
                 if (i.ToString() == Name)
@@ -63,14 +80,14 @@ namespace ConsoleUI
                     {
                         if (temptable.GetValue(j).ToString() == Password)
                         {
-                            valid = true;
+                            Valid = true;
                         }
                     }
                 }
                
 
-        } */
-            return valid;
+        } 
+            
         }
     }
 }

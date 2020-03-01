@@ -64,15 +64,12 @@ namespace ConsoleUI
                             Console.WriteLine("Please enter your password");
                             String password = Console.ReadLine();
 
-                            //create Data access object and create table for user data
-                            DAO test = new DAO();
-                            DataTable userTable = test.getUserTable();
-
+                            
                             //create user object
-                            User user = new User(username, password, userTable);
+                            User user = new User(username, password);
                             //validate user login
-                            bool valid = user.ValidateUser();
-                            if (valid == true) { Console.WriteLine("You Logged in!"); }
+                            user.ValidateUser();
+                            if (user.Valid == true) { Console.WriteLine("You Logged in!"); }
                             break;
                         case 2:
                             // Allow user to input message using provided interface.

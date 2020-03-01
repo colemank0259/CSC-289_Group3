@@ -27,13 +27,14 @@ namespace ConsoleUI
 
         }
 
-        //bugged, returns an empty datatable
+        //not bugged, problem is in passing table to User class
         public DataTable getUserTable()
         {
             //necessary stuff? need to experiment further...
             SQLiteDataAdapter ad;
             DataTable dt = new DataTable();
 
+                        
             sqlite.Open(); //Initiate connection to the db
             
             SQLiteCommand cmd;
@@ -43,6 +44,9 @@ namespace ConsoleUI
             ad.Fill(dt); //fill the datasource
             
             sqlite.Close();
+
+            //see if there is data in the table, SUCCESS
+            //foreach (DataRow row in dt.Rows) { Console.WriteLine("row"); }
 
             return dt;
         }

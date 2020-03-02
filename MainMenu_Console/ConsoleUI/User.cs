@@ -7,48 +7,48 @@ using System.Data;
 
 namespace ConsoleUI
 {
-    class User
+    public class User
     {
+        private string _name;
+        private string _password;
         //Properties
 
-        
+        public User()
+        {
+            Name = "";
+            Password = "";
+            bool Valid = false;
+        }
+
+        public User(String name, String password)
+        {
+            _name = name;
+            _password = password;
+            
+            bool Valid = false;
+        }
+
         public bool Valid = false;
         /*{
             get;
             set;
         }*/
 
-        public String Name
+        //Constructors
+        //bugged, passes data in wrong
+        public string Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
         public String Password
         {
-            get { return Password; }
-            set { Password = value; }
+            get { return _password; }
+            set { _password = value; }
         }
        
-        //Constructors
-        //bugged, passes data in wrong
-        public User(String name, String password)
-        {
-             String Name = name;
-             String Password = password;
-             //DataTable UserTable = dt.Copy();
-             bool Valid = false;
-        }
-
-        public User()
-        {
-             String Name = "";
-             String Password = "";
-             bool Valid = false;
-        }
-
-        //User Methods
-
-            
+        //User Method
+         
         public void ValidateUser()
         {
             DAO test = new DAO();
@@ -68,17 +68,24 @@ namespace ConsoleUI
 
             //put the data from the table into an array for reasons
             Array temptable = UserTable.Select();
+           // Console.WriteLine(temptable[0]);
 
-            //array is empty... WHY?!
-            //Console.WriteLine(temptable.Length);
+            foreach (object i in temptable)
+            {
+                System.Console.Write("{0} ", i);
+            }
+
+            Console.WriteLine(temptable.Length);
             
-            foreach (Object i in temptable)
-            {                
-                if (i.ToString() == Name)
-                {
+            foreach (object i in temptable)
+            {
+                Console.WriteLine("test");
+                if (i.ToString() == _name)                   
+                    {
+                    Console.WriteLine("test2");
                     for (int j =0;j<temptable.Length;j++)
                     {
-                        if (temptable.GetValue(j).ToString() == Password)
+                        if (temptable.GetValue(j).ToString() == _password)
                         {
                             Valid = true;
                         }
@@ -86,7 +93,7 @@ namespace ConsoleUI
                 }
                
 
-        } 
+            } 
             
         }
     }

@@ -4,3 +4,9 @@ C:\Users\chris\Desktop\Trials\TridirectionalInput\ConsoleUI\bin\Debug\ConsoleUI.
 C:\Users\chris\Desktop\Trials\TridirectionalInput\ConsoleUI\bin\Debug\ConsoleUI.pdb
 C:\Users\chris\Desktop\Trials\TridirectionalInput\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\chris\Desktop\Trials\TridirectionalInput\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\chris\Desktop\dev\CSC-289_Group3\Message\ConsoleUI\obj\Debug\ConsoleUI.pdb

@@ -12,6 +12,7 @@ namespace ConsoleUI
         {
             Console.WriteLine("Use the arrow keys to type your message: ");
             ConsoleKeyInfo first, second, third;
+            List<string> Line = new List<string>();
 
             /* The following code is test code
              * and will read key input
@@ -47,13 +48,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow: // If the third key pressed is the left arrow...
-                                        Console.WriteLine("A"); // Print "A" to the screen.
+                                        Line.Add("A"); // Print "A" to the screen.
                                         break;
                                     case ConsoleKey.DownArrow: // The rest of the switch-case structures
-                                        Console.WriteLine("B");// follow the same logic, spelling out
+                                        Line.Add("B");// follow the same logic, spelling out
                                         break;                 // the entire alphabet and a space character. 
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("C");
+                                        Line.Add("C");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -65,13 +66,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("D");
+                                        Line.Add("D");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("E");
+                                        Line.Add("E");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("F");
+                                        Line.Add("F");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -83,13 +84,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("G");
+                                        Line.Add("G");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("H");
+                                        Line.Add("H");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("I");
+                                        Line.Add("I");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -110,13 +111,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("J");
+                                        Line.Add("J");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("K");
+                                        Line.Add("K");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("L");
+                                        Line.Add("L");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -128,13 +129,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("M");
+                                        Line.Add("M");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("N");
+                                        Line.Add("N");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("O");
+                                        Line.Add("O");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -146,13 +147,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("P");
+                                        Line.Add("P");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("Q");
+                                        Line.Add("Q");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("R");
+                                        Line.Add("R");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -173,13 +174,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("S");
+                                        Line.Add("S");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("T");
+                                        Line.Add("T");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("U");
+                                        Line.Add("U");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -191,13 +192,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("V");
+                                        Line.Add("V");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("W");
+                                        Line.Add("W");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine("X");
+                                        Line.Add("X");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -209,13 +210,13 @@ namespace ConsoleUI
                                 switch (third.Key)
                                 {
                                     case ConsoleKey.LeftArrow:
-                                        Console.WriteLine("Y");
+                                        Line.Add("Y");
                                         break;
                                     case ConsoleKey.DownArrow:
-                                        Console.WriteLine("Z");
+                                        Line.Add("Z");
                                         break;
                                     case ConsoleKey.RightArrow:
-                                        Console.WriteLine(" ");
+                                        Line.Add(" ");
                                         break;
                                     default:
                                         Console.WriteLine("\nPlease use the arrow keys.");
@@ -231,6 +232,8 @@ namespace ConsoleUI
                         Console.WriteLine("\nPlease use the arrow keys.");
                         break;
                 }
+                var fullLine = string.Join("", Line);
+                Console.WriteLine(fullLine);
             } while (first.Key != ConsoleKey.X);
 
         }

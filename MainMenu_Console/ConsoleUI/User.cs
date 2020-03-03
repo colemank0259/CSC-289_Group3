@@ -79,6 +79,20 @@ namespace ConsoleUI
             
             foreach (DataRow i in temptable)
             {
+                Console.WriteLine("in for loop");
+                if (i[1].ToString() == _name && i[2].ToString() == _password)                   
+                    {
+                        Console.WriteLine("name and password verified");
+                        Valid = true;
+                        
+                    
+                    }
+               
+
+            }
+            /*
+             foreach (DataRow i in temptable)
+            {
                 Console.WriteLine("test");
                 if (i[1].ToString() == _name)                   
                     {
@@ -94,7 +108,8 @@ namespace ConsoleUI
                
 
             } 
-            
+             */
+
         }
     }
 }

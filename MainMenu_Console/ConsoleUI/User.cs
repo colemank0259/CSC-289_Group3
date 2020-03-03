@@ -77,10 +77,10 @@ namespace ConsoleUI
 
             Console.WriteLine(temptable.Length);
             
-            foreach (object i in temptable)
+            foreach (DataRow i in temptable)
             {
                 Console.WriteLine("test");
-                if (i.ToString() == _name)                   
+                if (i[1].ToString() == _name)                   
                     {
                     Console.WriteLine("test2");
                     for (int j =0;j<temptable.Length;j++)

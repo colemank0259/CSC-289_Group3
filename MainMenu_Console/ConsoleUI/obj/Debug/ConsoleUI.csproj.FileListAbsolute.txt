@@ -4,3 +4,13 @@ C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\C
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\EntityFramework.dll
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.dll
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\EntityFramework.xml
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.xml
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete

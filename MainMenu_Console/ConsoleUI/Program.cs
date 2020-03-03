@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-
+using TDI;
 
 namespace ConsoleUI
 {
@@ -47,16 +47,7 @@ namespace ConsoleUI
                         case 1:
                             // Display user login form
 
-                            /* This will call another module to show
-                             * a field for username and password,
-                             * buttons to login or cancel,
-                             * and a button to create an account.
-                             * This information will be validated
-                             * to log the user in or prompt the user
-                             * that the information was incorrect.
-                             * This form will also allow a new user
-                             * to create an account.
-                             */
+                            
 
                              //get username and password
                             Console.WriteLine("Please enter your username");
@@ -73,15 +64,8 @@ namespace ConsoleUI
                             break;
                         case 2:
                             // Allow user to input message using provided interface.
-
-                            /* This will call a module to allow the user
-                             * the ability to input a message using our
-                             * application. In the beginning, this is looking
-                             * like using arrow keys or WASD in combinations
-                             * corresponding to individual characters of the
-                             * alphabet.
-                             */
                             Console.WriteLine("Please enter your message using the key provided...");
+                            TriDirectionalInput.TDIMain();
                             break;
                         case 3:
                             // Changes exit value to false, exiting the program

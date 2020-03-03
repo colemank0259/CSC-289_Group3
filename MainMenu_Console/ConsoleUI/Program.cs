@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using TDI;
+using System.Windows.Forms;
 
 namespace ConsoleUI
 {
@@ -47,7 +48,7 @@ namespace ConsoleUI
                         case 1:
                             // Display user login form
 
-                            
+                            Application.Run(new Login());
 
                              //get username and password
                             Console.WriteLine("Please enter your username");

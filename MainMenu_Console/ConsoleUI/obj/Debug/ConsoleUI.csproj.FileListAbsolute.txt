@@ -14,3 +14,5 @@ C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\E
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.xml
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.Login.resources
+C:\Users\chris\Desktop\dev\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csproj.GenerateResource.cache

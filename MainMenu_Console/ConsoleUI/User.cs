@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 
 namespace ConsoleUI
@@ -24,7 +20,7 @@ namespace ConsoleUI
         {
             _name = name;
             _password = password;
-            
+
             bool Valid = false;
         }
 
@@ -46,9 +42,9 @@ namespace ConsoleUI
             get { return _password; }
             set { _password = value; }
         }
-       
+
         //User Method
-         
+
         public void ValidateUser()
         {
             DAO test = new DAO();
@@ -68,7 +64,7 @@ namespace ConsoleUI
 
             //put the data from the table into an array for reasons
             Array temptable = UserTable.Select();
-           // Console.WriteLine(temptable[0]);
+            // Console.WriteLine(temptable[0]);
 
             foreach (object i in temptable)
             {
@@ -76,18 +72,18 @@ namespace ConsoleUI
             }
 
             Console.WriteLine(temptable.Length);
-            
+
             foreach (DataRow i in temptable)
             {
                 Console.WriteLine("in for loop");
-                if (i[1].ToString() == _name && i[2].ToString() == _password)                   
-                    {
-                        Console.WriteLine("name and password verified");
-                        Valid = true;
-                        
-                    
-                    }
-               
+                if (i[1].ToString() == _name && i[2].ToString() == _password)
+                {
+                    Console.WriteLine("name and password verified");
+                    Valid = true;
+
+
+                }
+
 
             }
             /*

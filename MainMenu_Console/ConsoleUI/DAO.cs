@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 
@@ -12,7 +8,7 @@ namespace ConsoleUI
     public class DAO
     {
         //Properties
-        
+
 
         //Database connection
         public SQLiteConnection sqlite;
@@ -23,7 +19,7 @@ namespace ConsoleUI
             //get current directory and connect to DB file, only returns ConsoleUI/bin/Debug
             string directory = Environment.CurrentDirectory;
             //Console.WriteLine(directory);
-            sqlite = new SQLiteConnection("Data Source="+ directory +"/proto.sqlite");
+            sqlite = new SQLiteConnection("Data Source=" + directory + "/proto.sqlite");
 
         }
 
@@ -34,15 +30,15 @@ namespace ConsoleUI
             SQLiteDataAdapter ad;
             DataTable dt = new DataTable();
 
-                        
+
             sqlite.Open(); //Initiate connection to the db
-            
+
             SQLiteCommand cmd;
             cmd = sqlite.CreateCommand();
             cmd.CommandText = "SELECT * FROM User"; //set the query 
             ad = new SQLiteDataAdapter(cmd);
             ad.Fill(dt); //fill the datasource
-            
+
             sqlite.Close();
 
             //see if there is data in the table, SUCCESS

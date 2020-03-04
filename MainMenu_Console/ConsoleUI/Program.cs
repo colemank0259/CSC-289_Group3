@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using TDI;
 using System.Windows.Forms;
 
 namespace ConsoleUI
@@ -50,13 +44,13 @@ namespace ConsoleUI
 
                             Application.Run(new Login());
 
-                             //get username and password
+                            //get username and password
                             Console.WriteLine("Please enter your username");
                             String username = Console.ReadLine();
                             Console.WriteLine("Please enter your password");
                             String password = Console.ReadLine();
 
-                            
+
                             //create user object
                             User user = new User(username, password);
                             //validate user login
@@ -66,7 +60,7 @@ namespace ConsoleUI
                         case 2:
                             // Allow user to input message using provided interface.
                             Console.WriteLine("Please enter your message using the key provided...");
-                            TriDirectionalInput.TDIMain();
+                            TDI_Library.TDI_Class.Main();
                             break;
                         case 3:
                             // Changes exit value to false, exiting the program
@@ -85,7 +79,7 @@ namespace ConsoleUI
                     Console.WriteLine($"'{choice}' is not a valid choice. Please try again.");
                 }
 
-            } while (exit == false);            
+            } while (exit == false);
         }
     }
 }

@@ -85,6 +85,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Device Integration\Device Integration.csproj">
+      <Project>{8ed24cef-c97f-4d3f-918c-16acceb72ae2}</Project>
+      <Name>Device Integration</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TDI_Library\TDI_Library.csproj">
       <Project>{59729966-6fd7-4030-89b0-cd004c153db8}</Project>
       <Name>TDI_Library</Name>

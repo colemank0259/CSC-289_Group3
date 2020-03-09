@@ -1,0 +1,13 @@
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\Login_Form.exe.config
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\Login_Form.exe
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\Login_Form.pdb
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.csprojAssemblyReference.cache
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.Login.resources
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.Properties.Resources.resources
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.csproj.GenerateResource.cache
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.exe
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.pdb
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\System.Data.SQLite.dll
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\System.Data.SQLite.xml
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Login_Form\obj\Debug\Login_Form.csproj.CopyComplete

@@ -220,5 +220,29 @@ namespace TDI_Library
                 Console.WriteLine(fullLine);                // TODO: work on output to be more user-friendly.
             } while (first.Key != ConsoleKey.X);
         }
+
+        public static void notMain()
+        {
+            List<string> Line = new List<string>();
+            //List<ConsoleKey> Combo = new List<ConsoleKey>();
+            //ConsoleKeyInfo first, second, third;
+            //first = Console.ReadKey();
+            //Combo.Add(first.Key);
+            //second = Console.ReadKey();
+            //Combo.Add(second.Key);
+            //third = Console.ReadKey();
+            //Combo.Add(third.Key);
+
+            /* if it's possible to switch a list,
+             * Combo can be used to simplify the old code
+             */
+
+            ConsoleKeyInfo first;
+            first = Console.ReadKey();
+            Console.WriteLine(first.KeyChar);
+
+            string fullLine = string.Join("", Line);
+            Console.WriteLine(fullLine);
+        }
     }
 }

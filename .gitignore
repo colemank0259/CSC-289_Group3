@@ -4,4 +4,4 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+*slnx.sqlite

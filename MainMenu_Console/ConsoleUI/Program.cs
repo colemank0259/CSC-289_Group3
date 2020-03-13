@@ -37,14 +37,9 @@ namespace ConsoleUI
                     {
                         case 1:
                             // Display user login form
+                            Login_Form.Login login = new Login_Form.Login();
+                            Application.Run(login);
 
-                            /*Application.Run(new Login());
-                             * Calls old Login form, which is deleted
-                             * Needs to now access the Login_Form project
-                             * ConsoleUI already references project
-                             */
-
-                            //Application.Run(new );
                             
                             //get username and password
                             //Console.WriteLine("Please enter your username");

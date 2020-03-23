@@ -22,8 +22,7 @@ namespace ConsoleUI
             sqlite = new SQLiteConnection("Data Source=" + directory + "/proto.sqlite");
 
         }
-
-        //not bugged, problem is in passing table to User class
+                
         public DataTable getUserTable()
         {
             //necessary stuff? need to experiment further...
@@ -45,6 +44,40 @@ namespace ConsoleUI
             //foreach (DataRow row in dt.Rows) { Console.WriteLine("row"); }
 
             return dt;
+        }
+
+        public DataTable getUser(string username, string password)
+        {
+           
+                string query = "SELECT * FROM user WHERE username= @username AND password= @password";                
+                sqlite.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, sqlite);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                            
+
+            return dt;
+        }
+
+        public void insertIntoUserTable(string name, string password)
+        {                     
+
+            sqlite.Open(); //Initiate connection to the db
+
+            //variable to hold command for convenience 
+            String sql = "INSERT INTO User(username, password) VALUES('" + name + "', '" + password + "')";
+
+            SQLiteCommand cmd;
+            cmd = sqlite.CreateCommand();
+            cmd.CommandText = sql; //set the command             
+            
+            //Execute Command
+            cmd.ExecuteNonQuery();
+            
+            sqlite.Close();
         }
 
     }

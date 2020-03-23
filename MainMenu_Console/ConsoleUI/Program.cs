@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using Utilities;
+using TDI_Library;
+using Login_Form;
 
 namespace ConsoleUI
 {
@@ -26,9 +29,9 @@ namespace ConsoleUI
             do
             {
                 // Display main menu for user
-                Utilities.Utils.MainMenu();
+                Utils.MainMenu();
                 // Get validated integer from user
-                string optionString = Utilities.Utils.PromptInput();
+                string optionString = Utils.PromptInput();
 
                 if (int.TryParse(optionString, out int option))
                 {
@@ -37,7 +40,7 @@ namespace ConsoleUI
                     {
                         case 1:
                             // Display user login form
-                            Login_Form.Login login = new Login_Form.Login();
+                            Login login = new Login();
                             Application.Run(login);
 
                             
@@ -57,7 +60,7 @@ namespace ConsoleUI
                         case 2:
                             // Allow user to input message using provided interface.
                             Console.WriteLine("Please enter your message using the key provided...");
-                            TDI_Library.TDI_Class.Main();
+                            TDI_Class.Main();
                             break;
                         case 3:
                             // Changes exit value to false, exiting the program
@@ -65,13 +68,13 @@ namespace ConsoleUI
                             break;
                         default:
                             // Message if input is not a menu option
-                            Utilities.Utils.InvalidInput(option.ToString());
+                            Utils.InvalidInput(option.ToString());
                             break; 
                     }
                 }
                 else
                 {
-                    Utilities.Utils.InvalidInput(optionString);
+                    Utils.InvalidInput(optionString);
                 }
             } while (exit == false);
         }

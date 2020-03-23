@@ -37,7 +37,7 @@ namespace ConsoleUI
             get { return _name; }
             set { _name = value; }
         }
-        public String Password
+        public string Password
         {
             get { return _password; }
             set { _password = value; }
@@ -68,7 +68,7 @@ namespace ConsoleUI
 
             foreach (object i in temptable)
             {
-                System.Console.Write("{0} ", i);
+                Console.Write("{0} ", i);
             }
 
             Console.WriteLine(temptable.Length);

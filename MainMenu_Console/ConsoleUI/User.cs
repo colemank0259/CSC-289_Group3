@@ -16,7 +16,7 @@ namespace ConsoleUI
             bool Valid = false;
         }
 
-        public User(String name, String password)
+        public User(string name, string password)
         {
             _name = name;
             _password = password;

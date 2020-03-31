@@ -154,6 +154,20 @@
       <Version>6.2.8</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleUI_NET_Standard\ConsoleUI_NET_Standard.csproj">
+      <Project>{30653c23-0944-4e8a-b789-07efcbde0029}</Project>
+      <Name>ConsoleUI_NET_Standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDI_Library_NET_Standard\TDI_Library_NET_Standard.csproj">
+      <Project>{b1776408-82af-4f06-8e73-18dd7e9ba987}</Project>
+      <Name>TDI_Library_NET_Standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities_NET_Standard\Utilities_NET_Standard.csproj">
+      <Project>{e8768f54-fc02-4347-b49e-0b5b964606f4}</Project>
+      <Name>Utilities_NET_Standard</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

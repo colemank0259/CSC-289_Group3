@@ -8,6 +8,7 @@ namespace ConsoleUI_NET_Standard
 {
     public class DAO
     {
+        //TODO: Update database stuff (SQLite does not seem to work with .NET Standard)
         //Properties
 
 

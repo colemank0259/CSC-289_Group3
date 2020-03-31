@@ -4,6 +4,58 @@
     "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_UWP\\ConsoleUI_UWP.csproj": {}
   },
   "projects": {
+    "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj",
+        "projectName": "ConsoleUI_NET_Standard",
+        "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj",
+        "packagesPath": "C:\\Users\\kevbl\\.nuget\\packages\\",
+        "outputPath": "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kevbl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_UWP\\ConsoleUI_UWP.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +82,14 @@
         },
         "frameworks": {
           "uap10.0.10240": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj": {
+                "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj"
+              },
+              "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj": {
+                "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj"
+              }
+            }
           }
         }
       },
@@ -65,6 +124,58 @@
         },
         "win10-x86-aot": {
           "#import": []
+        }
+      }
+    },
+    "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj",
+        "projectName": "TDI_Library_NET_Standard",
+        "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj",
+        "packagesPath": "C:\\Users\\kevbl\\.nuget\\packages\\",
+        "outputPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kevbl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
         }
       }
     }

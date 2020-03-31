@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.Common;
+using System.Data.SQLite;
 
 namespace ConsoleUI_NET_Standard
 {
     public class DAO
     {
-        //TODO: Update database stuff (SQLite does not seem to work with .NET Standard)
         //Properties
 
 
         //Database connection
-        public DbConnection sqlite;
+        public SQLiteConnection sqlite;
 
         //Constructors
         public DAO()
@@ -21,7 +20,7 @@ namespace ConsoleUI_NET_Standard
             //get current directory and connect to DB file, only returns ConsoleUI/bin/Debug
             string directory = Environment.CurrentDirectory;
             //Console.WriteLine(directory);
-            sqlite = new DbConnection("Data Source=" + directory + "/proto.sqlite");
+            sqlite = new SQLiteConnection("Data Source=" + directory + "/proto.sqlite");
 
         }
 
@@ -29,16 +28,16 @@ namespace ConsoleUI_NET_Standard
         public DataTable getUserTable()
         {
             //necessary stuff? need to experiment further...
-            DataAdapter ad;
+            SQLiteDataAdapter ad;
             DataTable dt = new DataTable();
 
 
             sqlite.Open(); //Initiate connection to the db
 
-            DbCommand cmd;
+            SQLiteCommand cmd;
             cmd = sqlite.CreateCommand();
             cmd.CommandText = "SELECT * FROM User"; //set the query 
-            ad = new DataAdapter(cmd);
+            ad = new SQLiteDataAdapter(cmd);
             ad.Fill(dt); //fill the datasource
 
             sqlite.Close();

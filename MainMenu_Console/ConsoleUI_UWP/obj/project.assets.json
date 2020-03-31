@@ -2246,6 +2246,16 @@
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
         }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-arm": {
@@ -4566,6 +4576,16 @@
         },
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
+        }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
         }
       }
     },
@@ -6924,6 +6944,16 @@
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
         }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-arm64-aot": {
@@ -8879,6 +8909,16 @@
         },
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
+        }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
         }
       }
     },
@@ -11209,6 +11249,16 @@
         },
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
+        }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
         }
       }
     },
@@ -13576,6 +13626,16 @@
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
         }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-x86": {
@@ -15905,6 +15965,16 @@
         },
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
+        }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
         }
       }
     },
@@ -18271,6 +18341,16 @@
         },
         "runtime": {
           "bin/placeholder/TDI_Library_NET_Standard.dll": {}
+        }
+      },
+      "Utilities_NET_Standard/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_NET_Standard.dll": {}
         }
       }
     }
@@ -28132,13 +28212,19 @@
       "type": "project",
       "path": "../TDI_Library_NET_Standard/TDI_Library_NET_Standard.csproj",
       "msbuildProject": "../TDI_Library_NET_Standard/TDI_Library_NET_Standard.csproj"
+    },
+    "Utilities_NET_Standard/1.0.0": {
+      "type": "project",
+      "path": "../Utilities_NET_Standard/Utilities_NET_Standard.csproj",
+      "msbuildProject": "../Utilities_NET_Standard/Utilities_NET_Standard.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10240": [
       "ConsoleUI_NET_Standard >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8",
-      "TDI_Library_NET_Standard >= 1.0.0"
+      "TDI_Library_NET_Standard >= 1.0.0",
+      "Utilities_NET_Standard >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -28177,6 +28263,9 @@
             },
             "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj": {
               "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj"
+            },
+            "D:\\CSC-289_Group3\\MainMenu_Console\\Utilities_NET_Standard\\Utilities_NET_Standard.csproj": {
+              "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\Utilities_NET_Standard\\Utilities_NET_Standard.csproj"
             }
           }
         }
@@ -28238,6 +28327,15 @@
     {
       "code": "NU1201",
       "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240). Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
       "message": "Project ConsoleUI_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm. Project ConsoleUI_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "ConsoleUI_NET_Standard",
       "targetGraphs": [
@@ -28249,6 +28347,15 @@
       "level": "Error",
       "message": "Project TDI_Library_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm. Project TDI_Library_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "TDI_Library_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-arm"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
       "targetGraphs": [
         "UAP,Version=v10.0.10240/win10-arm"
       ]
@@ -28274,6 +28381,15 @@
     {
       "code": "NU1201",
       "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm-aot. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-arm-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
       "message": "Project ConsoleUI_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm64-aot. Project ConsoleUI_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "ConsoleUI_NET_Standard",
       "targetGraphs": [
@@ -28285,6 +28401,15 @@
       "level": "Error",
       "message": "Project TDI_Library_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm64-aot. Project TDI_Library_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "TDI_Library_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-arm64-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm64-aot. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
       "targetGraphs": [
         "UAP,Version=v10.0.10240/win10-arm64-aot"
       ]
@@ -28310,6 +28435,15 @@
     {
       "code": "NU1201",
       "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
       "message": "Project ConsoleUI_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64-aot. Project ConsoleUI_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "ConsoleUI_NET_Standard",
       "targetGraphs": [
@@ -28321,6 +28455,15 @@
       "level": "Error",
       "message": "Project TDI_Library_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64-aot. Project TDI_Library_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "TDI_Library_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x64-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64-aot. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
       "targetGraphs": [
         "UAP,Version=v10.0.10240/win10-x64-aot"
       ]
@@ -28346,6 +28489,15 @@
     {
       "code": "NU1201",
       "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
       "message": "Project ConsoleUI_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86-aot. Project ConsoleUI_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "ConsoleUI_NET_Standard",
       "targetGraphs": [
@@ -28357,6 +28509,15 @@
       "level": "Error",
       "message": "Project TDI_Library_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86-aot. Project TDI_Library_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
       "libraryId": "TDI_Library_NET_Standard",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Utilities_NET_Standard is not compatible with uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86-aot. Project Utilities_NET_Standard supports: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Utilities_NET_Standard",
       "targetGraphs": [
         "UAP,Version=v10.0.10240/win10-x86-aot"
       ]

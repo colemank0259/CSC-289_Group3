@@ -3,3 +3,9 @@ C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\TDI_Library\bin\De
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.csprojAssemblyReference.cache
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.dll
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.pdb
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\bin\Debug\TDI_Library.dll
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\bin\Debug\TDI_Library.pdb
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.csprojAssemblyReference.cache
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.csproj.CoreCompileInputs.cache
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.dll
+D:\CSC-289_Group3\MainMenu_Console\TDI_Library\obj\Debug\TDI_Library.pdb

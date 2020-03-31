@@ -3,3 +3,9 @@ C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Utilities\bin\Debu
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.dll
 C:\Users\chris\Desktop\Trials\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.pdb
+D:\CSC-289_Group3\MainMenu_Console\Utilities\bin\Debug\Utilities.dll
+D:\CSC-289_Group3\MainMenu_Console\Utilities\bin\Debug\Utilities.pdb
+D:\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+D:\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.dll
+D:\CSC-289_Group3\MainMenu_Console\Utilities\obj\Debug\Utilities.pdb

@@ -1,0 +1,47 @@
+table saved_phrases
+
+	phrase string // TEXT NOT NULL UNIQUE,
+	UserID int // INTEGER,
+	PRIMARY KEY("UserID")
+	
+table saved_words
+
+	phrase string// TEXT NOT NULL UNIQUE,
+	UserID string// INTEGER,
+	PRIMARY KEY("UserID")
+	
+table user
+
+	userID int // INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+	username string // TEXT NOT NULL UNIQUE,
+	password string // TEXT NOT NULL
+
+talbe TriDirectionKey
+
+	LLL string// TEXT DEFAULT 'A',
+	LLC string// TEXT DEFAULT 'B',
+	LLR string// TEXT DEFAULT 'C',
+	LCL string// TEXT DEFAULT 'D',
+	LCC string// TEXT DEFAULT 'E',
+	LCR string// TEXT DEFAULT 'F',
+	LRL string// TEXT DEFAULT 'G',
+	LRC string// TEXT DEFAULT 'H',
+	LRR	string// TEXT DEFAULT 'I',
+	CLL string// TEXT DEFAULT 'J',
+	CLC string// TEXT DEFAULT 'K',
+	CLR	string// TEXT DEFAULT 'L',
+	CCL	string// TEXT DEFAULT 'M',
+	CCC	string// TEXT DEFAULT 'N',
+	CCR	string// TEXT DEFAULT 'O',
+	CRL	string// TEXT DEFAULT 'P',
+	CRC	string// TEXT DEFAULT 'Q',
+	CRR	string// TEXT DEFAULT 'R',
+	RLL	string// TEXT DEFAULT 'S',
+	RLC	string// TEXT DEFAULT 'T',
+	RLR	string// TEXT DEFAULT 'U',
+	RCL	string// TEXT DEFAULT 'V',
+	RCC	string// TEXT DEFAULT 'W',
+	RCR	string// TEXT DEFAULT 'X',
+	RRL	string// TEXT DEFAULT 'Y',
+	RRC	string// TEXT DEFAULT 'Z',
+	RRR	string// TEXT DEFAULT '_'

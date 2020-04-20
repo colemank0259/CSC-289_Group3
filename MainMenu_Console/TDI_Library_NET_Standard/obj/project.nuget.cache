@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "79YnYwRXqtRj8y0BGZ4/D8wok8SeXbMuq4tE0Qqc80ZQbnxZZaw0I3oG7De3PPZI2o/b4U9l5bDublVPqfkzlg==",
+  "success": true,
+  "projectFilePath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_NET_Standard\\TDI_Library_NET_Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

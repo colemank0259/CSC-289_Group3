@@ -107,7 +107,7 @@
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.10, )"
+              "version": "[6.2.8, )"
             }
           }
         }

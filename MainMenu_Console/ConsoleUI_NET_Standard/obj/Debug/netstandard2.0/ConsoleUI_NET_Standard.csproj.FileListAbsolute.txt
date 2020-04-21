@@ -2,3 +2,5 @@ D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\obj\Debug\netstandard2
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\obj\Debug\netstandard2.0\ConsoleUI_NET_Standard.csproj.CoreCompileInputs.cache
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\obj\Debug\netstandard2.0\ConsoleUI_NET_Standard.AssemblyInfoInputs.cache
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\obj\Debug\netstandard2.0\ConsoleUI_NET_Standard.AssemblyInfo.cs
+D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\bin\Debug\netstandard2.0\ConsoleUI_NET_Standard.deps.json
+D:\CSC-289_Group3\MainMenu_Console\ConsoleUI_NET_Standard\bin\Debug\netstandard2.0\ConsoleUI_NET_Standard.dll

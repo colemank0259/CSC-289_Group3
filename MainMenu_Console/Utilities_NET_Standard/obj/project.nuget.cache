@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DwmFbs+mLNudW/GkZBFMi8ck/W38ri5gj7YRv6ZDq8LF+DDFgi91ekBv2YuXY0uWxLkwutk+a5Yi+t9FqdPO8A==",
+  "dgSpecHash": "b+tZutIirD69mbclpZJoL8FfxnV+O8TmxOQRwd4/ZIFRSdumalZGcMwioIHE4pk0f7+mT2vn7fI7sUEtGwNmew==",
   "success": true,
   "projectFilePath": "D:\\CSC-289_Group3\\MainMenu_Console\\Utilities_NET_Standard\\Utilities_NET_Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.data.sqlite\\1.0.112\\system.data.sqlite.1.0.112.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.data.sqlite.core\\1.0.112\\system.data.sqlite.core.1.0.112.nupkg.sha512"
   ],
   "logs": []
 }

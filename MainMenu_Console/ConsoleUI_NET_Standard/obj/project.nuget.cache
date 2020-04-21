@@ -1,11 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "XSvFuKCFCOs8cheR4z/La+wWnkqNb+uHEuZyZRD7sRiPOlf7u6I2LDFgdld+g66iaQh4fm1TL8h5jrGtVr9Nsg==",
+  "dgSpecHash": "HcuOtMXS1WVegv0wam5KJwW7FSyNXoxIZNpYvtvmPYmtendNMfzCO/Ouv+UCeBqnTZGDzdYdGYYda52olfvlEw==",
   "success": true,
   "projectFilePath": "D:\\CSC-289_Group3\\MainMenu_Console\\ConsoleUI_NET_Standard\\ConsoleUI_NET_Standard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kevbl\\.nuget\\packages\\microsoft.data.sqlite\\3.1.3\\microsoft.data.sqlite.3.1.3.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.3\\microsoft.data.sqlite.core.3.1.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.2\\sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.data.sqlite\\1.0.112\\system.data.sqlite.1.0.112.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.data.sqlite.core\\1.0.112\\system.data.sqlite.core.1.0.112.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\kevbl\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
   ],
   "logs": []
 }

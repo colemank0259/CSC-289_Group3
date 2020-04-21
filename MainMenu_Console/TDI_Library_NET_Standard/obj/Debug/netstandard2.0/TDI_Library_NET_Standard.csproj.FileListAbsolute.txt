@@ -2,7 +2,6 @@ D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\bin\Debug\netstandar
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\bin\Debug\netstandard2.0\TDI_Library_NET_Standard.dll
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\bin\Debug\netstandard2.0\TDI_Library_NET_Standard.pdb
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\obj\Debug\netstandard2.0\TDI_Library_NET_Standard.csprojAssemblyReference.cache
-D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\obj\Debug\netstandard2.0\TDI_Library_NET_Standard.csproj.CoreCompileInputs.cache
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\obj\Debug\netstandard2.0\TDI_Library_NET_Standard.AssemblyInfoInputs.cache
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\obj\Debug\netstandard2.0\TDI_Library_NET_Standard.AssemblyInfo.cs
 D:\CSC-289_Group3\MainMenu_Console\TDI_Library_NET_Standard\obj\Debug\netstandard2.0\TDI_Library_NET_Standard.dll

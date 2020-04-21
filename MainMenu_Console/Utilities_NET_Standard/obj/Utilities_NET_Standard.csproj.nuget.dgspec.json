@@ -47,9 +47,9 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "sqlite-net-standard": {
+            "System.Data.SQLite": {
               "target": "Package",
-              "version": "[1.5.1, )"
+              "version": "[1.0.112, )"
             }
           },
           "imports": [

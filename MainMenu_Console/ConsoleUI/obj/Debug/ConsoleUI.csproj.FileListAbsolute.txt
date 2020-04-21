@@ -47,3 +47,4 @@ D:\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreComp
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.exe
 D:\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.pdb
+D:\CSC-289_Group3\MainMenu_Console\ConsoleUI\obj\Debug\ConsoleUI.exe.config

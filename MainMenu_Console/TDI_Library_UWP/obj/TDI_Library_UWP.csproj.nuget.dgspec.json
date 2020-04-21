@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_UWP\\TDI_Library_UWP.csproj": {}
+  },
+  "projects": {
+    "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_UWP\\TDI_Library_UWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_UWP\\TDI_Library_UWP.csproj",
+        "projectName": "TDI_Library_UWP",
+        "projectPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_UWP\\TDI_Library_UWP.csproj",
+        "packagesPath": "C:\\Users\\kevbl\\.nuget\\packages\\",
+        "outputPath": "D:\\CSC-289_Group3\\MainMenu_Console\\TDI_Library_UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kevbl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.10, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

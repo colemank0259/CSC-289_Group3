@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI_NET_Standard", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI_UWP", "ConsoleUI_UWP\ConsoleUI_UWP.csproj", "{641D39BC-12D7-4481-AEE1-FF3A28E5B9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDI_Library_NET_Standard", "TDI_Library_NET_Standard\TDI_Library_NET_Standard.csproj", "{B1776408-82AF-4F06-8E73-18DD7E9BA987}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDI_Library_NET_Standard", "TDI_Library_NET_Standard\TDI_Library_NET_Standard.csproj", "{B1776408-82AF-4F06-8E73-18DD7E9BA987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities_NET_Standard", "Utilities_NET_Standard\Utilities_NET_Standard.csproj", "{E8768F54-FC02-4347-B49E-0B5B964606F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities_NET_Standard", "Utilities_NET_Standard\Utilities_NET_Standard.csproj", "{E8768F54-FC02-4347-B49E-0B5B964606F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

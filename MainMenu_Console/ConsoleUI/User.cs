@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Data;
+using System.Security.Cryptography;
+
 
 namespace ConsoleUI
 {
     public class User
     {
+        public bool Valid = false;
+        Random random = new Random();
         private string _name;
         private string _password;
+        private int _saltnum;
+
         //Properties
 
         public User()
@@ -14,6 +20,7 @@ namespace ConsoleUI
             Name = "";
             Password = "";
             bool Valid = false;
+            _saltnum = random.Next(0,99999);
         }
 
         public User(String name, String password)
@@ -22,9 +29,9 @@ namespace ConsoleUI
             _password = password;
 
             bool Valid = false;
+            _saltnum = random.Next(0,99999);
         }
-
-        public bool Valid = false;
+              
         
         //Constructors       
         public string Name
@@ -75,9 +82,21 @@ namespace ConsoleUI
         }
 
         public void Register()
-        {            
+        {
+                       
+            //salt and hash password before user info is entered into DB
+            //create a random salt
+            RNGCryptoServiceProvider regRNG = new RNGCryptoServiceProvider();
+            byte[] salt = new byte[_saltnum];
+            regRNG.GetBytes(salt);
+            string strSalt = Convert.ToBase64String(salt);
+            //hash password
+            string saltAndPwd = String.Concat(_password, strSalt);            
+            string hashedPwd = saltAndPwd.GetHashCode().ToString();
+            
+
             DAO dao = new DAO();
-            dao.insertIntoUserTable(_name, _password);
+            dao.insertIntoUserTable(_name, hashedPwd, strSalt);
         }
     }
 }

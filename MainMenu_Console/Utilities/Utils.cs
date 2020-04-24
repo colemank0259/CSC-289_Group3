@@ -13,8 +13,9 @@ namespace Utilities
             // Displays Main Menu options to user
             Console.WriteLine("---Main Menu---");
             Console.WriteLine("1. User login");
-            Console.WriteLine("2. Input message");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("2. Register New User");
+            Console.WriteLine("3. Input message");
+            Console.WriteLine("4. Exit");
         }
 
         public static string PromptInput()

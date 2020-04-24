@@ -22,8 +22,7 @@ namespace ConsoleUI
             sqlite = new SQLiteConnection("Data Source=" + directory + "/proto.sqlite");
 
         }
-
-        //not bugged, problem is in passing table to User class
+                
         public DataTable getUserTable()
         {
             //necessary stuff? need to experiment further...
@@ -45,6 +44,62 @@ namespace ConsoleUI
             //foreach (DataRow row in dt.Rows) { Console.WriteLine("row"); }
 
             return dt;
+        }
+
+        public DataTable getUser(string username, string password)
+        {
+
+                sqlite.Open();
+                DataTable dt = new DataTable();
+                DataTable salt = new DataTable();
+
+                //if username in DB, get salt
+                string saltquery = "SELECT salt FROM user WHERE username= @username";
+                SQLiteCommand saltcmd = new SQLiteCommand(saltquery, sqlite);
+                saltcmd.Parameters.AddWithValue("@username", username);
+                SQLiteDataAdapter saltDA = new SQLiteDataAdapter(saltcmd);
+                saltDA.Fill(salt);
+
+                Array saltArray = salt.Select();
+                foreach(DataRow i in saltArray)
+                {
+                    if (i[0].ToString() != "")
+                    {
+                    string saltedPassword = String.Concat(password,i[0]);
+                    string saltedHashedPassword = saltedPassword.GetHashCode().ToString();
+                    //perform 2nd query
+                    string query = "SELECT username, password FROM user WHERE username= @username AND password= @password";
+                    SQLiteCommand cmd = new SQLiteCommand(query, sqlite);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", saltedHashedPassword);
+                    SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                    da.Fill(dt);
+                    }
+                }
+
+                
+                            
+
+            return dt;
+        }
+
+        public void insertIntoUserTable(string name, string password, string salt)
+        {                     
+
+            sqlite.Open(); //Initiate connection to the db
+
+            //variable to hold command for convenience 
+            String sql = "INSERT INTO User(username, password, salt) VALUES('" + name + "', '" + password + "' , '"+ 
+                salt +"')";
+
+            SQLiteCommand cmd;
+            cmd = sqlite.CreateCommand();
+            cmd.CommandText = sql; //set the command             
+            
+            //Execute Command
+            cmd.ExecuteNonQuery();
+            
+            sqlite.Close();
         }
 
     }

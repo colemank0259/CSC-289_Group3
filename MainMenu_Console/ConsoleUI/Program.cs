@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using Utilities;
 using TDI_Library;
-using Login_Form;
 
 namespace ConsoleUI
 {
@@ -42,27 +41,18 @@ namespace ConsoleUI
                             // Display user login form
                             Login login = new Login();
                             Application.Run(login);
-
-                            
-                            //get username and password
-                            //Console.WriteLine("Please enter your username");
-                            //String username = Console.ReadLine();
-                            //Console.WriteLine("Please enter your password");
-                            //String password = Console.ReadLine();
-
-
-                            ////create user object
-                            //User user = new User(username, password);
-                            ////validate user login
-                            //user.ValidateUser();
-                            //if (user.Valid == true) { Console.WriteLine("You Logged in!"); }
                             break;
                         case 2:
+                            //display user registration form
+                            Registration registration = new Registration();
+                            Application.Run(registration);
+                            break;
+                        case 3:
                             // Allow user to input message using provided interface.
                             Console.WriteLine("Please enter your message using the key provided...");
                             TDI_Class.Main();
                             break;
-                        case 3:
+                        case 4:
                             // Changes exit value to false, exiting the program
                             exit = true;
                             break;

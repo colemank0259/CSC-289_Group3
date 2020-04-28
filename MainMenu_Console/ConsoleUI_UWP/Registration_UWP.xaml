@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="ConsoleUI_UWP.MainPage"
+    x:Class="ConsoleUI_UWP.Registration_UWP"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ConsoleUI_UWP"
@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Center" Margin="0,63,0,0" Text="Tri-Directional Speech" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72"/>
+        <TextBlock x:Name="RegistrationTitleTextBlock" HorizontalAlignment="Center" Margin="0,99,0,0" Text="New User Registraion" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
 
     </Grid>
 </Page>

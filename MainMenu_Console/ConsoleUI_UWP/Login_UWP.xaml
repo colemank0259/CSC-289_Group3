@@ -10,6 +10,10 @@
 
     <Grid>
         <TextBlock x:Name="LoginTitleTextBlock" HorizontalAlignment="Center" Margin="0,64,0,0" Text="User Login" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="LoginButton" Content="Login" Margin="279,568,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="Cancel" Content="Cancel" Margin="840,568,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="602,249,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Input Username" FontSize="24"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="602,409,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Input Password" FontSize="24"/>
 
     </Grid>
 </Page>

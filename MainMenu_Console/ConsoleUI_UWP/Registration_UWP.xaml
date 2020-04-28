@@ -10,6 +10,11 @@
 
     <Grid>
         <TextBlock x:Name="RegistrationTitleTextBlock" HorizontalAlignment="Center" Margin="0,99,0,0" Text="New User Registraion" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="542,204,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Input Username" FontSize="24"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24" PlaceholderText="Input Password"/>
+        <TextBox x:Name="ConfirmPasswordTextBox" HorizontalAlignment="Center" Margin="0,445,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Confirm Password" FontSize="24"/>
+        <Button x:Name="RegisterButton" Content="Register" Margin="298,566,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="CancelButton" Content="Cancel" Margin="910,582,0,0" VerticalAlignment="Top" FontSize="36"/>
 
     </Grid>
 </Page>

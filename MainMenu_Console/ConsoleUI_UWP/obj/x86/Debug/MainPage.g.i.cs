@@ -15,6 +15,8 @@ namespace ConsoleUI_UWP
 
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+        private global::Windows.UI.Xaml.Controls.TextBlock TitleTextBlock; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
         private bool _contentLoaded;
 
         /// <summary>

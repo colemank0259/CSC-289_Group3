@@ -10,6 +10,11 @@
 
     <Grid>
         <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Center" Margin="0,63,0,0" Text="Tri-Directional Speech" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72"/>
+        <Button x:Name="LoginButton" Content="Login" Margin="1018,31,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="RegisterButton" Content="Register" Margin="1137,31,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="LeftButton" Content="Left" Margin="249,298,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Button x:Name="CenterButton" Content="Center" Margin="0,302,0,0" VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Center"/>
+        <Button x:Name="RightButton" Content="Right" Margin="964,298,0,0" VerticalAlignment="Top" FontSize="48"/>
 
     </Grid>
 </Page>

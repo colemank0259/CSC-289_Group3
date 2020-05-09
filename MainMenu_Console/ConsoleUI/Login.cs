@@ -16,6 +16,7 @@ namespace ConsoleUI
             if(user.Valid == true)
             {
                 MessageBox.Show("You have logged in!");
+                this.Close();
             }
             else
             {

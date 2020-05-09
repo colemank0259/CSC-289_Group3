@@ -30,6 +30,8 @@ namespace ConsoleUI
 
                 //register user
                 user.Register();
+                this.Close();
+                
             }
             else { MessageBox.Show("Make sure both entries of your password match"); }
         }

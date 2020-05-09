@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Security.Cryptography;
-
+using System.Windows.Forms;
 
 namespace ConsoleUI
 {
@@ -83,20 +83,25 @@ namespace ConsoleUI
 
         public void Register()
         {
-                       
-            //salt and hash password before user info is entered into DB
-            //create a random salt
-            RNGCryptoServiceProvider regRNG = new RNGCryptoServiceProvider();
-            byte[] salt = new byte[_saltnum];
-            regRNG.GetBytes(salt);
-            string strSalt = Convert.ToBase64String(salt);
-            //hash password
-            string saltAndPwd = String.Concat(_password, strSalt);            
-            string hashedPwd = saltAndPwd.GetHashCode().ToString();
-            
+            try
+            {
+                //salt and hash password before user info is entered into DB
+                //create a random salt
+                RNGCryptoServiceProvider regRNG = new RNGCryptoServiceProvider();
+                byte[] salt = new byte[_saltnum];
+                regRNG.GetBytes(salt);
+                string strSalt = Convert.ToBase64String(salt);
+                //hash password
+                string saltAndPwd = String.Concat(_password, strSalt);
+                string hashedPwd = saltAndPwd.GetHashCode().ToString();
 
-            DAO dao = new DAO();
-            dao.insertIntoUserTable(_name, hashedPwd, strSalt);
+
+                DAO dao = new DAO();
+                dao.insertIntoUserTable(_name, hashedPwd, strSalt);
+                MessageBox.Show("You have successfully registered!");
+            }
+            //this is not good code. FIX LATER.
+            catch { MessageBox.Show("You cannot register using a name that is already in the system."); }
         }
     }
 }

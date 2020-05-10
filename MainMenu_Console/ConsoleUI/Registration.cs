@@ -19,19 +19,25 @@ namespace ConsoleUI
 
         private void registerButton_Click(object sender, EventArgs e)
         {
-            //check if both passwords entered match
-            if (inputPasswordTextBox.Text == confirmPasswordTextBox.Text)
-            {
-                String username = usernameTextBox.Text;
-                String password = inputPasswordTextBox.Text;
-                               
-                //create user object
-                User user = new User(username, password);
 
-                //register user
-                user.Register();
-                this.Close();
+            //check if username and password are blank
+            if (usernameTextBox.Text != "" && inputPasswordTextBox.Text != "")
+            {
                 
+                //check if both passwords entered match
+                if (inputPasswordTextBox.Text == confirmPasswordTextBox.Text)
+                {
+                    String username = usernameTextBox.Text;
+                    String password = inputPasswordTextBox.Text;
+
+                    //create user object
+                    User user = new User(username, password);
+
+                    //register user
+                    user.Register();
+                    this.Close();
+                }
+                else {MessageBox.Show("You must enter a username and password") }
             }
             else { MessageBox.Show("Make sure both entries of your password match"); }
         }
